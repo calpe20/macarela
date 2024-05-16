@@ -26,24 +26,6 @@ selected = option_menu(menu_title=None,
                        options=["Reservar", "Galeria", "Detalles"],
                        icons=["calendar-date", "camera", "list"],
                        orientation="horizontal")
-if selected == "Reservar":
-    st.subheader("Reservar")
-    c1, c2 = st.columns(2)
-    nombre = c1.text_input("Tu nombre :", placeholder="Nombre")
-    celular = c2.text_input("Tu Número Celular :")
-    fecha = c1.date_input("Fecha :")
-    hora = c2.multiselect("Hora :", horas, placeholder="Seleccione las horas a Reservar")
-    nota = st.text_area("Notas :")
-    enviar = st.button("Reservar", type="primary")
-
-    
-    if enviar:
-        st.write(hora)
-        if nombre == "":
-            st.warning("El nombre es obligatorio")
-        elif celular == "":
-            st.warning("El Celular es obligatorio, para poder confirmar!")
-
 
 if selected == "Galeria":
     st.subheader("Galería de Imágenes con Deslizamiento")
@@ -93,3 +75,21 @@ if selected == "Detalles":
     contacto.text("📱 944 173 183" )
     facebook.subheader("Facebook")
     facebook.markdown("Sìguenos [aqui](https://www.facebook.com/profile.php?id=61553346112578) en Facebook")
+
+if selected == "Reservar":
+    st.subheader("Reservar")
+    c1, c2 = st.columns(2)
+    nombre = c1.text_input("Tu nombre :", placeholder="Nombre")
+    celular = c2.text_input("Tu Número Celular :")
+    fecha = c1.date_input("Fecha :")
+    hora = c2.multiselect("Hora :", horas, placeholder="Seleccione las horas a Reservar")
+    nota = st.text_area("Notas :")
+    enviar = st.button("Reservar", type="primary")
+
+    
+    if enviar:
+        st.write(hora)
+        if nombre == "":
+            st.warning("El nombre es obligatorio")
+        elif celular == "":
+            st.warning("El Celular es obligatorio, para poder confirmar!")

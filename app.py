@@ -32,7 +32,7 @@ if selected == "Reservar":
     c1.text_input("Tu nombre", placeholder="Nombre")
     c2.text_input("Tu Número Celular")
     c1.date_input("Fecha")
-    c2.multiselect("Hora", horas)
+    c2.multiselect("Hora", horas, placeholder="Seleccione las horas a Reservar")
     st.text_area("Notas")
 
 

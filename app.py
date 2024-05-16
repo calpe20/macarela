@@ -25,7 +25,9 @@ selected = option_menu(menu_title=None,
                        icons=["calendar-date", "camera", "list"],
                        orientation="horizontal")
 if selected == "Reservar":
+    st.subheader("Reservar")
     col1, col2 = st.columns(2)
+
 
 if selected == "Galeria":
     st.subheader("Galería de Imágenes con Deslizamiento")

@@ -30,7 +30,7 @@ if selected == "Galeria":
 
     # Lista de URLs de imágenes
     image_urls = [
-        "https://via.placeholder.com/600x400.png?text=Imagen+1",
+        "https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/424880342_122126771720111537_7494779318361705032_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG1-_NqhSgQWmM7HHFA_Xe-Zmzc2dzzriJmbNzZ3POuIgMniLdLw9tyUTt6iAU4WBY&_nc_ohc=7HL5jo3QPmgQ7kNvgHuF9jw&_nc_ht=scontent-lim1-1.xx&cb_e2o_trans=t&oh=00_AYCWJgaKaQb9Esx0k6cJWBHtmz-dT7yqOnsptBUFNarsPg&oe=664B71F5",
         "https://via.placeholder.com/600x400.png?text=Imagen+2",
         "https://via.placeholder.com/600x400.png?text=Imagen+3",
         "https://via.placeholder.com/600x400.png?text=Imagen+4"

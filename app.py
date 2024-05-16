@@ -37,3 +37,6 @@ if selected == "Detalles":
     # Mostrar el mapa en Streamlit
     st_folium(m, width=800, height=300)
     st.subheader("Horarios")
+    url = "https://www.facebook.com/profile.php?id=61553346112578&sk=photos"
+    st.markdown(f'<iframe src="{url}" width="100%" height="600"></iframe>', unsafe_allow_html=True)
+

@@ -34,7 +34,7 @@ if selected == "Reservar":
     c1.date_input("Fecha :")
     c2.multiselect("Hora :", horas, placeholder="Seleccione las horas a Reservar")
     st.text_area("Notas :")
-    enviar = st.button("Reservar", type="primary")
+    enviar = st.button("Reservar", type="secondary")
 
 
 if selected == "Galeria":

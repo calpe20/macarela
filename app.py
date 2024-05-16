@@ -31,7 +31,7 @@ if selected == "Reservar":
     c1, c2 = st.columns(2)
     c1.text_input("Tu nombre")
     c2.text_input("Tu Número Celular")
-    c1.text_input("Fecha")
+    c1.date_input("Fecha")
     c2.selectbox("Hora", horas)
     st.text_area("Notas")
 

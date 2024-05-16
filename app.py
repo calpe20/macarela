@@ -36,7 +36,9 @@ if selected == "Reservar":
     nota = st.text_area("Notas :")
     enviar = st.button("Reservar", type="primary")
 
+    
     if enviar:
+        st.write(hora)
         if nombre == "":
             st.warning("El nombre es obligatorio")
         elif celular == "":

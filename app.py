@@ -25,6 +25,17 @@ selected = option_menu(menu_title=None,
                        icons=["calendar-date", "camera", "list"],
                        orientation="horizontal")
 
+if selected == "Galeria":
+    st.subheader("Galería de Imágenes con Deslizamiento")
+
+    # Lista de URLs de imágenes
+    image_urls = [
+        "https://via.placeholder.com/600x400.png?text=Imagen+1",
+        "https://via.placeholder.com/600x400.png?text=Imagen+2",
+        "https://via.placeholder.com/600x400.png?text=Imagen+3",
+        "https://via.placeholder.com/600x400.png?text=Imagen+4"
+    ]
+
 if selected == "Detalles":
     m = folium.Map(location=[-8.37343, -74.53733], zoom_start=18)  # Ejemplo: Madrid, España
 

@@ -55,4 +55,4 @@ if selected == "Detalles":
     hora.text("14:00 - 23:00")
 
     st.subheader("Contacto")
-    st.text(":iphone: 944 173 183" )
+    st.text("📱 944 173 183" )

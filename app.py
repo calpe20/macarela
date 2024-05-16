@@ -29,12 +29,18 @@ selected = option_menu(menu_title=None,
 if selected == "Reservar":
     st.subheader("Reservar")
     c1, c2 = st.columns(2)
-    c1.text_input("Tu nombre :", placeholder="Nombre")
-    c2.text_input("Tu Número Celular :")
-    c1.date_input("Fecha :")
-    c2.multiselect("Hora :", horas, placeholder="Seleccione las horas a Reservar")
-    st.text_area("Notas :")
-    enviar = st.button("Reservar", type="secondary")
+    nombre = c1.text_input("Tu nombre :", placeholder="Nombre")
+    celular = c2.text_input("Tu Número Celular :")
+    fecha = c1.date_input("Fecha :")
+    hora = c2.multiselect("Hora :", horas, placeholder="Seleccione las horas a Reservar")
+    nota = st.text_area("Notas :")
+    enviar = st.button("Reservar", type="primary")
+
+    if enviar:
+        if nombre == "":
+            st.warning("El nombre es obligatorio")
+        elif celular == "":
+            st.warning("El Celular es obligatorio, para poder confirmar!")
 
 
 if selected == "Galeria":

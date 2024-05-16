@@ -87,9 +87,17 @@ if selected == "Reservar":
     enviar = st.button("Reservar", type="primary")
 
     
-    if enviar:
-        st.write(hora)
+    if enviar:        
         if nombre == "":
             st.warning("El nombre es obligatorio")
         elif celular == "":
             st.warning("El Celular es obligatorio, para poder confirmar!")
+        else:
+            data = {
+                'nombre': nombre,
+                'celular': celular,
+                'fecha': fecha,
+                'hora': hora,
+                'nota': nota,
+            }
+            st.write(data)

@@ -54,3 +54,5 @@ if selected == "Detalles":
     dia.text("Domingo")
     hora.text("14:00 - 23:00")
 
+    st.subheader("Contacto")
+    st.text(":iphone: 944 173 183" )

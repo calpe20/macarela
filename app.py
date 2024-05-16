@@ -9,6 +9,8 @@ page_title = "Macarela Voley Playa"
 page_icon = ":volleyball:"
 layout = "centered"
 
+horas = ["14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00", "22:00", "23:00"]
+
 st.set_page_config(
     page_title=page_title,
     page_icon=page_icon,
@@ -26,7 +28,12 @@ selected = option_menu(menu_title=None,
                        orientation="horizontal")
 if selected == "Reservar":
     st.subheader("Reservar")
-    col1, col2 = st.columns(2)
+    c1, c2 = st.columns(2)
+    c1.text_input("Tu nombre")
+    c2.text_input("Tu Número Celular")
+    c1.text_input("Fecha")
+    c2.selectbox("Hora", horas)
+    st.text_area("Notas")
 
 
 if selected == "Galeria":

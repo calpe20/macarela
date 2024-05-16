@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import folium
 from streamlit_folium import st_folium
+import streamlit.components.v1 as components
 
 
 page_title = "Macarela Voley Playa"
@@ -38,5 +39,5 @@ if selected == "Detalles":
     st_folium(m, width=800, height=300)
     st.subheader("Horarios")
     url = "https://www.facebook.com/profile.php?id=61553346112578&sk=photos"
-    st.markdown(f'<iframe src="{url}" width="100%" height="600"></iframe>', unsafe_allow_html=True)
+    st.markdown(f'<iframe src="{url}" width="100%" height="600"></iframe>', unsafe_allow_html=False)
 

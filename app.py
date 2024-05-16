@@ -54,7 +54,8 @@ if selected == "Detalles":
     dia.text("Domingo")
     hora.text("14:00 - 23:00")
 
-    st.subheader("Contacto")
-    st.text("📱 944 173 183" )
-    st.subheader("Facebook")
-    st.markdown("Sìguenos [aqui](https://www.facebook.com/profile.php?id=61553346112578) en Facebook")
+    contacto, facebook = st.columns(2)
+    contacto.subheader("Contacto")
+    contacto.text("📱 944 173 183" )
+    facebook.subheader("Facebook")
+    facebook.markdown("Sìguenos [aqui](https://www.facebook.com/profile.php?id=61553346112578) en Facebook")

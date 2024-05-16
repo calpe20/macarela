@@ -29,11 +29,12 @@ selected = option_menu(menu_title=None,
 if selected == "Reservar":
     st.subheader("Reservar")
     c1, c2 = st.columns(2)
-    c1.text_input("Tu nombre", placeholder="Nombre")
-    c2.text_input("Tu Número Celular")
-    c1.date_input("Fecha")
-    c2.multiselect("Hora", horas, placeholder="Seleccione las horas a Reservar")
-    st.text_area("Notas")
+    c1.text_input("Tu nombre :", placeholder="Nombre")
+    c2.text_input("Tu Número Celular :")
+    c1.date_input("Fecha :")
+    c2.multiselect("Hora :", horas, placeholder="Seleccione las horas a Reservar")
+    st.text_area("Notas :")
+    enviar = st.button("Reservar", type="primary")
 
 
 if selected == "Galeria":

@@ -57,4 +57,4 @@ if selected == "Detalles":
     st.subheader("Contacto")
     st.text("📱 944 173 183" )
     st.subheader("Facebook")
-    st.markdown("Pulsa [aqui](https://www.facebook.com/profile.php?id=61553346112578)")
+    st.markdown("Sìguenos [aqui](https://www.facebook.com/profile.php?id=61553346112578) en Facebook")

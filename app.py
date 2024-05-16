@@ -36,7 +36,8 @@ if selected == "Galeria":
         "https://via.placeholder.com/600x400.png?text=Imagen+4"
     ]
 
-    st.image(list[image_urls])
+    for a in image_urls:
+        st.image(a)
 
 if selected == "Detalles":
     m = folium.Map(location=[-8.37343, -74.53733], zoom_start=18)  # Ejemplo: Madrid, España
